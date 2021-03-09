@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "sushiswap javascript widget",
   "scripts": {
-    "start": "rm -rf .cache dist && parcel src/script.js --port 3501 --no-autoinstall",
-    "build": "rm -rf .cache dist && NODE_ENV=production parcel build src/script.js --no-source-maps --no-autoinstall",
+    "start": "rm -rf .cache dist && npx parcel src/script.js --port 3501 --no-autoinstall",
+    "build": "rm -rf .cache dist && NODE_ENV=production npx parcel build src/script.js --no-source-maps --no-autoinstall",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -26,7 +26,8 @@
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-inliner": "^1.0.10",
     "prettier": "^1.19.1",
-    "sass": "^1.23.0-module.beta.1"
+    "sass": "^1.23.0-module.beta.1",
+    "tap-html": "^1.0.1"
   },
   "license": "MIT",
   "browserslist": [

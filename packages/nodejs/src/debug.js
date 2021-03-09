@@ -1,4 +1,4 @@
-export default debug('1inch:js', '#59f');
+export default debug('SushiRelay:js', '#59f');
 
 function debug(scope, color) {
   let enabled = 'localhost' === window.location.hostname;

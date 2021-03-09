@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #59f;
+  --light-color: rgb(223, 236, 255);
+  --radius: 8px;
+}
+
+body {
+  padding-top: 50px;
+  width: 700px;
+  margin: 0 auto;
+  font-family: 'Work Sans', sans-serif;
+}
+
+button,
+button:after,
+button:before {
+  background-color: var(--light-color);
+}
+
+button:before {
+  left: -20px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+}
+
+button:after,
+button:before {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  bottom: 0;
+  top: 0;
+}
+
+button:after {
+  right: -20px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+button span {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: var(--primary-color);
+  position: relative;
+  width: 30px;
+  height: 44px;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.shot {
+  border-radius: var(--radius);
+}
+
+.notification {
+  padding: 10px 25px;
+  border-radius: var(--radius);
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
+
+.notification.success {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.notification.error {
+  background-color: #ffecec;
+  color: #ff0b0b;
+}
+
+pre {
+  background: #eee;
+  padding: 10px 25px;
+  border-radius: var(--radius);
+}

@@ -1,4 +1,4 @@
-export default debug('1inch:iframe', '#bada55');
+export default debug('SushiSwap:iframe', '#bada55');
 
 function debug(scope, color) {
   let enabled = 'localhost' === window.location.hostname;

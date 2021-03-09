@@ -1,4 +1,4 @@
-export default debug('1inch:example', 'rgb(243, 132, 30)');
+export default debug('SushiSwap:example', 'rgb(243, 132, 30)');
 
 function debug(scope, color) {
   let enabled = 'localhost' === window.location.hostname;

@@ -78,7 +78,7 @@ async function sleep(ms) {
 function showExampleCode() {
   const jsHost =
     process.env.NODE_ENV === 'production'
-      ? 'https://1inch-swap.surge.sh/js/script.js'
+      ? 'https://sushirelay.netlify.app/js'
       : 'http://localhost:3501/script.js';
   document.querySelector('code').innerText = `
 <button id='buy-button'>Buy Token</button>

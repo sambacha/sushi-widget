@@ -3,8 +3,8 @@
   "source": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "rm -rf .cache dist && parcel src/index.html --port 3502 --no-autoinstall",
-    "build": "rm -rf .cache dist && NODE_ENV=production parcel build src/index.html --no-source-maps --no-autoinstall",
+    "start": "rm -rf .cache dist && npx parcel src/index.html --port 3502 --no-autoinstall",
+    "build": "rm -rf .cache dist && NODE_ENV=production npx parcel build src/index.html --no-source-maps --no-autoinstall",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node src/server.js"
   },
@@ -12,7 +12,8 @@
     "@babel/core": "^7.7.5",
     "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.6",
-    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "@fullhuman/postcss-purgecss": "3.0.0",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
@@ -27,7 +28,8 @@
     "postcss": "^7",
     "postcss-modules": "4.0.0",
     "prettier": "^1.19.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "webpack": "^4"
   },
   "license": "MIT",
   "browserslist": [
@@ -35,7 +37,9 @@
     "ie 11"
   ],
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
-    "postcss-cli": "^8.3.1"
+    "parcel-bundler": "1.12.3",
+    "postcss-cli": "^8.3.1",
+    "sass-lint-auto-fix": "^0.21.2",
+    "stylelint": "^13.12.0"
   }
 }

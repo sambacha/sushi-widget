@@ -10,7 +10,7 @@ import debug from './debug';
 const INFURA_ID = process.env.INFURA_ID;
 const IFRAME_HOST = process.env.IFRAME_HOST;
 const PRECISION = 4;
-const ETH_ONE_INCH_ADDR = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee';
+const ETH_SUSHISWAP_ADDR = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee';
 const SLIPPAGE = 1;
 const FAVORITE_TOKENS = [
   'ETH',
@@ -274,7 +274,7 @@ class Swap {
     const toAsset = {};
     if (toEthereum) {
       toAsset.symbol = 'ETH';
-      toAsset.address = ETH_ONE_INCH_ADDR;
+      toAsset.address = ETH_SUSHISWAP_ADDR;
       toAsset.decimals = 18;
       toAsset.isETH = true;
     } else {
@@ -552,5 +552,5 @@ async function request(url, query) {
 }
 
 function isEth(addr) {
-  return addr.toLowerCase() === ETH_ONE_INCH_ADDR;
+  return addr.toLowerCase() === ETH_SUSHISWAP_ADDR;
 }

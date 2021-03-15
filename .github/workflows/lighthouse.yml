@@ -12,7 +12,7 @@ jobs:
           node-version: 10.x
       - name: npm install, build
         run: |
-	  cd packages/nodejs
+          cd packages/nodejs
           npm install
           npm run build
       - name: run Lighthouse CI
